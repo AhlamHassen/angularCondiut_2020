@@ -16,4 +16,12 @@ export class AppComponent {
      this.articlesService = articleService;
   }
 
+  create(){
+    this.articlesService.createAnonymous("Ahlam", {
+      title: "Ahlam - Http post requests",
+      description: "posting into webservers",
+      body: "something"
+    });
+  }
+
 }

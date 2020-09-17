@@ -1,6 +1,7 @@
 <h1>{{ title }}</h1>
 
 <button (click)=" articlesService.get()">Get</button>
+<button (click)=" create()">Create</button>
 
 <div *ngIf ="articlesService.loading">Loading ...</div>
 <ul *ngIf="articlesService.loaded">
