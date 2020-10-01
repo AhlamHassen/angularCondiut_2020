@@ -2,6 +2,7 @@
 
 <button (click)=" articlesService.get()">Get</button>
 <button (click)=" create()">Create</button>
+<button (click)=" createUser()">CreateUser</button>
 
 <div *ngIf ="articlesService.loading">Loading ...</div>
 <ul *ngIf="articlesService.loaded">
