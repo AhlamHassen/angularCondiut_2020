@@ -30,9 +30,9 @@ export class ArticlesService {
     });
   }
 
-  createAnonymous(userName: string, article: Article){
+  createAnonymous(username: string, article: Article){
      let request = this.httpClient.post<ArticleEnvelope>("http://swindev.me/articles/anonymous", {
-       userName:userName,
+       userName:username,
        article: article
      }as CreateAnonymousCommand);
 
