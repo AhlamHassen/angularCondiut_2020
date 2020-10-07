@@ -28,7 +28,7 @@ export class AppComponent {
   createUser(){
     this.userService.createuser({
       userName: "yenal",
-      email: "yeanl@gmail.com",
+      email: "yenal@gmail.com",
       password: "123yenal456"
     });
   }
