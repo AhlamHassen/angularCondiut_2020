@@ -1,1 +1,5 @@
-<p>article-list works!</p>
+<ul *ngIf="articlesService.loaded">
+    <li *ngFor=" let arrtt of articlesService.articles">
+      <app-article-details [arrtt]="arrtt"></app-article-details>
+    </li>
+  </ul>
