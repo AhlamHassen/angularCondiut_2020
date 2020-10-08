@@ -1,4 +1,4 @@
-<button>Referesh</button>
+<button (click)="articlesService.get()">Referesh</button>
 <div *ngIf ="articlesService.loading">Loading ...</div>
 <ul *ngIf="articlesService.loaded">
     <li *ngFor=" let arrtt of articlesService.articles">
