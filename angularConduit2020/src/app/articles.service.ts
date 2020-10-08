@@ -23,7 +23,7 @@ export class ArticlesService {
     this.loaded = false;
 
     request.subscribe((response) => {
-      this.articles = response.articles;
+      this.articles = response.articles.filter(x => x.articleId > 400);
 
       this.loading = false;
       this.loaded = true;
