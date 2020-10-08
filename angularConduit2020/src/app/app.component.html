@@ -1,4 +1,7 @@
 <h1>{{ title }}</h1>
+<div>
+  <router-outlet></router-outlet>
+</div>
 
 <button (click)=" articlesService.get()">Get</button>
 <button (click)=" create()">Create</button>
