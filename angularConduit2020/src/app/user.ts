@@ -8,6 +8,10 @@ export interface User{
     password: string;
 }
 
-export interface CreateCommand{
+export interface UserCreateCommand{
     user: User; 
+}
+
+export interface UserLogInCommand{
+    user: User;
 }
