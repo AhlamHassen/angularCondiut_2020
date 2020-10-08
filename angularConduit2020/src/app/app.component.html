@@ -1,4 +1,9 @@
 <h1>{{ title }}</h1>
+
+<div class="linkDiv">
+  <a routerLink="/Articles">Articles</a> | <a routerLink="/Account">Account LogIn</a>
+</div>
+
 <div>
   <router-outlet></router-outlet>
 </div>
@@ -6,5 +11,3 @@
 <button (click)=" articlesService.get()">Get</button>
 <button (click)=" create()">Create</button>
 <button (click)=" createUser()">CreateUser</button>
-
-<app-article-list></app-article-list>
