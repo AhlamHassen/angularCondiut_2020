@@ -3,7 +3,12 @@ export interface UserEnvelope{
 }
 
 export interface User{
-    userName: string;
+    username: string;
+    email: string;
+    password: string;
+}
+
+export interface user{
     email: string;
     password: string;
 }
@@ -13,5 +18,5 @@ export interface UserCreateCommand{
 }
 
 export interface UserLogInCommand{
-    user: User;
+    user: user;
 }

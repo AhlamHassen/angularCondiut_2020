@@ -1,6 +1,6 @@
 import { Injectable, ɵALLOW_MULTIPLE_PLATFORMS } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { UserEnvelope, User, UserCreateCommand, UserLogInCommand } from './user';
+import { UserEnvelope, User, UserCreateCommand, UserLogInCommand, user } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -26,9 +26,9 @@ export class UserService {
       })
   }
 
-  userLogin(User: User) {
+  userLogin(User: user) {
     let request = this.httpClient.post<UserEnvelope>("http://swindev.me/users/login", {
-      user: User
+      user:User
     } as UserLogInCommand);
 
     request.subscribe((response) => {

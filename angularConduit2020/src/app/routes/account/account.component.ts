@@ -16,12 +16,10 @@ export class AccountComponent implements OnInit {
   login(){
     this.userService.userLogin(
       {
-        userName: "yenal",
-        email: "yenal@gmail.com",
+        email: "yenalaa@gmail.com",
         password: "123yenal456"
       }
     )
-    
   }
 
 }
