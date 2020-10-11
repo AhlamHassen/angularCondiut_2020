@@ -23,7 +23,9 @@ export class ArticlesService {
     this.loaded = false;
 
     request.subscribe((response) => {
-      this.articles = response.articles.filter(x => x.articleId > 400);
+      // this.articles = response.articles.filter(x => x.articleId > 500);  //filter on articleId
+      // this.articles = response.articles.filter(x => x.updatedAt >= "2020-10-11"); //filtered on date
+      this.articles = response.articles.filter(x => x.author.username == "Ahlam");
 
       this.loading = false;
       this.loaded = true;
